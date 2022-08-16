@@ -1,4 +1,3 @@
-{ Погосян Арсен 109 группа}
 program sorts(input,output,f1,f2);
 const s_length=7;
       s_max_count=30;
