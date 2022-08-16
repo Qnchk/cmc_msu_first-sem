@@ -1,4 +1,3 @@
-{èÆ£Æ·Ô≠ Ä‡·•≠}
 program data_base(input, output, f1);
 const str_length=10;
 type str=array[1..str_length] of char;
@@ -49,35 +48,35 @@ var k,index,item_count:integer;
 
 begin
 rewrite(f);
-write('Ç¢•§®‚• ™ Æ´®Á•·‚¢Æ Ø‡•§¨•‚Æ¢ ¢ ®≠¢•≠‚†‡• :');
+write('–í–≤–µ–¥–∏—Ç–µ –∫ –æ–ª–∏—á–µ—Å—Ç–≤–æ –ø—Ä–µ–¥–º–µ—Ç–æ–≤ –≤ –∏–Ω–≤–µ–Ω—Ç–∞—Ä–µ :');
 readln(item_count);
 for index:=1 to item_count do
    begin
       data.quality:=[];
-      write('Ç¢•§®‚• ≠†ß¢†≠®• Ø‡•§¨•‚†, Æ™Æ≠Á®¢ ·‚‡Æ™„ ‚ÆÁ™Æ©: ');
+      write('–í–≤–µ–¥–∏—Ç–µ –Ω–∞–∑–≤–∞–Ω–∏–µ –ø—Ä–µ–¥–º–µ—Ç–∞, –æ–∫–æ–Ω—á–∏–≤ —Å—Ç—Ä–æ–∫—É —Ç–æ—á–∫–æ–π: ');
       str_read(data.name);
-      write('Ç¢•§®‚• ™Æ´®Á•·‚¢Æ ≠†™´••™ ≠† Ø‡•§¨•‚•: ');
+      write('–í–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ –Ω–∞–∫–ª–µ–µ–∫ –Ω–∞ –ø—Ä–µ–¥–º–µ—Ç–µ: ');
       readln(data.stickers_count);
       for k:=1 to data.stickers_count do
          begin
-            write('Ç¢•§®‚• ≠†™´•©™„ ≠Æ¨•‡ ',k,' Æ™Æ≠Á®¢ ·‚‡Æ™„ ‚ÆÁ™Æ©: ');
+            write('–í–≤–µ–¥–∏—Ç–µ –Ω–∞–∫–ª–µ–π–∫—É –Ω–æ–º–µ—Ä ',k,' –æ–∫–æ–Ω—á–∏–≤ —Å—Ç—Ä–æ–∫—É —Ç–æ—á–∫–æ–π: ');
             str_read(data.stikers[k]);
             readln;
          end;
-      write('Ç¢•§®‚• 1 •·´® stattrack ® 0 •·´® ≠•‚: ');
+      write('–í–≤–µ–¥–∏—Ç–µ 1 –µ—Å–ª–∏ stattrack –∏ 0 –µ—Å–ª–∏ –Ω–µ—Ç: ');
       readln(k);
       data.stattrack:=k=1;
-      write('Ç¢•§®‚• ™Æ´®Á•·‚¢Æ ™†Á•·‚¢ ™Æ‚Æ‡Î• ÂÆ‚®‚• ¢¢•·‚®: ');
+      write('–í–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ –∫–∞—á–µ—Å—Ç–≤ –∫–æ—Ç–æ—Ä—ã–µ —Ö–æ—Ç–∏—Ç–µ –≤–≤–µ—Å—Ç–∏: ');
       readln(data.quality_count);
       if data.quality_count>0 then
-         writeln('a-´•£•≠§†‡≠Æ•, b-ß†Ø‡•È•≠≠Æ•, c-ß†·•™‡•Á•≠≠Æ•, d-‡•§™Æ•, e-Ë®‡ØÆ‚‡•°');
+         writeln('a-–ª–µ–≥–µ–Ω–¥–∞—Ä–Ω–æ–µ, b-–∑–∞–ø—Ä–µ—â–µ–Ω–Ω–æ–µ, c-–∑–∞—Å–µ–∫—Ä–µ—á–µ–Ω–Ω–æ–µ, d-—Ä–µ–¥–∫–æ–µ, e-—à–∏—Ä–ø–æ—Ç—Ä–µ–±');
       for k:=1 to data.quality_count do
          begin
-            write('Ç¢•§®‚• ™†Á•·‚¢Æ ≠Æ¨•‡ ',k,' :');
+            write('–í–≤–µ–¥–∏—Ç–µ –∫–∞—á–µ—Å—Ç–≤–æ –Ω–æ–º–µ—Ä ',k,' :');
             readln(bufer);
             data.quality:=data.quality+[bufer];
          end;
-      write('Ç¢•§®‚• ·‚Æ®¨Æ·‚Ï Ø‡•§¨•‚† ¢ §Æ´´†‡†Â: ');
+      write('–í–≤–µ–¥–∏—Ç–µ —Å—Ç–æ–∏–º–æ—Å—Ç—å –ø—Ä–µ–¥–º–µ—Ç–∞ –≤ –¥–æ–ª–ª–∞—Ä–∞—Ö: ');
       readln(data.price);
       write(f,data);
    end;
@@ -104,10 +103,10 @@ while not(eof(f)) do
       write('====================');
       str_write(data.name);
       writeln('====================');
-      write('äÆ´®Á•·‚¢Æ ≠†™´••™ ≠† Ø‡•§¨•‚•: ',data.stickers_count);
+      write('–ö–æ–ª–∏—á–µ—Å—Ç–≤–æ –Ω–∞–∫–ª–µ–µ–∫ –Ω–∞ –ø—Ä–µ–¥–º–µ—Ç–µ: ',data.stickers_count);
       writeln;
       if data.stickers_count>0 then
-         writeln('ç†™´•©™®:');
+         writeln('–ù–∞–∫–ª–µ–π–∫–∏:');
       for k:=1 to data.stickers_count do
          begin
             write('   ');
@@ -116,19 +115,19 @@ while not(eof(f)) do
          end;
       writeln('Stattrack: ',data.stattrack);
       if data.quality_count>0 then
-         writeln('ÑÆ·‚„Ø≠Î• ™†Á•·‚¢† :')
+         writeln('–î–æ—Å—Ç—É–ø–Ω—ã–µ –∫–∞—á–µ—Å—Ç–≤–∞ :')
       else
-         writeln('ä†Á•·‚¢ ≠•‚');
+         writeln('–ö–∞—á–µ—Å—Ç–≤ –Ω–µ—Ç');
       for m:='a' to 'e' do
          if m in data.quality then
             case m of
-               'a': writeln('   ã•£•≠§†‡≠Æ•');
-               'b': writeln('   á†Ø‡•È•≠≠Æ• ');
-               'c': writeln('   á†·•™‡•Á•≠≠Æ•');
-               'd': writeln('   ê•§™Æ•');
-               'e': writeln('   ò®‡ØÆ‚‡•°');
+               'a': writeln('   –õ–µ–≥–µ–Ω–¥–∞—Ä–Ω–æ–µ');
+               'b': writeln('   –ó–∞–ø—Ä–µ—â–µ–Ω–Ω–æ–µ ');
+               'c': writeln('   –ó–∞—Å–µ–∫—Ä–µ—á–µ–Ω–Ω–æ–µ');
+               'd': writeln('   –†–µ–¥–∫–æ–µ');
+               'e': writeln('   –®–∏—Ä–ø–æ—Ç—Ä–µ–±');
             end;
-      writeln('ë‚Æ®¨Æ·‚Ï: ',data.price,'$');
+      writeln('–°—Ç–æ–∏–º–æ—Å—Ç—å: ',data.price,'$');
          end;
 end;
 
