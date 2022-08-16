@@ -1,4 +1,3 @@
-{ Pogosyan Arsen 109}
 program num1(input,output);
 const a1=3;
       b1=4;
